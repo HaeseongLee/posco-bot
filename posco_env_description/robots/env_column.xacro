@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="box">
+  <xacro:macro name="box" params="id:='box' connected_to:='base' xyz:='0 0 0' rpy:='0 0 0' size:='0 0 0' rgba:='1.0 1.0 1.0 1.0'">
+  
+    <joint name="${connected_to}_${id}" type="fixed">
+        <parent link="${connected_to}"/>
+        <child link="${id}"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>  
+    </joint>
+
+
+    <link name="${id}">
+      <visual>
+        <origin xyz="${xyz}" rpy="${rpy}"/>
+        <geometry>
+          <box size="${size}" />
+        </geometry>
+        <material name="color">
+          <color rgba="${rgba}"/>
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="${xyz}" rpy="${rpy}"/>
+        <geometry>
+            <box size="${size}" />
+        </geometry>
+      </collision>
+    </link>    
+
+  </xacro:macro>
+</robot>

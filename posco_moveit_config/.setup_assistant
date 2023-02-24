@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: posco_env_description
+    relative_path: robots/posco_env.urdf.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/panda.srdf
+  CONFIG:
+    author_name: Haeseong Lee
+    author_email: lhs4138@snu.ac.kr
+    generated_timestamp: 1677221343

@@ -1,0 +1,12 @@
+panda_left:
+  kinematics_solver: trac_ik_kinematics_plugin/TRAC_IKKinematicsPlugin
+  kinematics_solver_search_resolution: 0.01
+  kinematics_solver_timeout: 0.07000000000000001
+panda_right:
+  kinematics_solver: trac_ik_kinematics_plugin/TRAC_IKKinematicsPlugin
+  kinematics_solver_search_resolution: 0.001
+  kinematics_solver_timeout: 0.07000000000000001
+panda_top:
+  kinematics_solver: trac_ik_kinematics_plugin/TRAC_IKKinematicsPlugin
+  kinematics_solver_search_resolution: 0.001
+  kinematics_solver_timeout: 0.07000000000000001

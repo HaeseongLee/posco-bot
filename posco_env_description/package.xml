@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>posco_env_description</name>
+  <version>0.0.0</version>
+  <description>The posco_env_description package</description>
+
+  <maintainer email="lhs4138@snu.ac.kr">Haeseong Lee</maintainer>
+  <license>Apache 2.0</license>
+  <author>Haeseong Lee</author>
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>xacro</exec_depend>
+</package>
